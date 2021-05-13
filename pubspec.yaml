@@ -1,8 +1,8 @@
 name: zam_core
-description: Core Zamstation Library.
 version: 0.0.1
-publish_to: none
-homepage: www.zamstation.com
+description: Core Zamstation Library.
+homepage: https://zamstation.com
+repository: https://github.com/Zamstation/zam_core
 authors:
   - Amsakanna
 
