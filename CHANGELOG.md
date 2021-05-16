@@ -1,3 +1,9 @@
+# 0.0.2
+  * Modified `Identifiable` with generic and mandatory key.
+  * Added more tests.
+  * Added documentation.
+  * Updated with a better example.
+
 # 0.0.1
 Released on **13-May-2021**
 
