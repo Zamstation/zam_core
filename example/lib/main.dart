@@ -1,22 +1,19 @@
 import 'package:zam_core/zam_core.dart';
 
 void main() {
-  final car = Car(4, 4);
-  final clonedCar = car.clone();
-  print(car == clonedCar); // false
+  final triangle = Triangle(6, 4);
+  final clonedTriangle = triangle.clone();
+  print(triangle == clonedTriangle); // false
 }
 
-class Car implements Cloneable<Car> {
-  final doorCount;
-  final wheelCount;
+class Triangle implements Cloneable<Triangle> {
+  final double base;
+  final double height;
 
-  const Car(this.doorCount, this.wheelCount);
+  const Triangle(this.base, this.height);
 
   @override
-  Car clone() {
-    return Car(
-      this.doorCount,
-      this.wheelCount,
-    );
+  Triangle clone() {
+    return Triangle(this.base, this.height);
   }
 }

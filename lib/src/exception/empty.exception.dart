@@ -1,5 +1,8 @@
 import 'basic.exception.dart';
 
+/// 
+/// Empty object for [NamedException]
+/// 
 class EmptyException extends BasicException {
   final Type category = EmptyException;
   final String problem = 'Empty Exception Occured.';
