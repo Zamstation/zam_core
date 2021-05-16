@@ -6,7 +6,7 @@ import 'exception_severity.enum.dart';
 ///
 /// Provides better classified details of the exception.
 ///
-abstract class NamedException implements Exception, Identifiable {
+abstract class NamedException implements Exception, Identifiable<String> {
   ///
   /// The [name] is mostly the [runtimeType] of this class.
   ///
