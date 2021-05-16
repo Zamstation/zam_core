@@ -33,7 +33,8 @@ class BasicException implements NamedException {
   final severity = ExceptionSeverity.none;
 
   @override
-  String get text => '$name has occured.\n> Problem: $problem\n> Solution: $solution';
+  String get text =>
+      '$name has occured.\n> Problem: $problem\n> Solution: $solution';
 
   const BasicException();
 
