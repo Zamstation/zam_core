@@ -6,7 +6,7 @@ void main() {
 }
 
 void testObjectAsStreamExtension() {
-  group('Object As Stream Extension Test:', () {
+  group('ObjectAsStreamExtension:', () {
     final input = 86;
     final output = input.asStream();
 
