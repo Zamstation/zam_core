@@ -10,7 +10,7 @@
 ///
 ///     Stream<int> ageStream = 48.asStream();
 ///
-extension ObjectAsStreamExtension<T extends Object> on T {
+extension ObjectAsStreamExtension<T extends Object?> on T {
   Stream<T> asStream() {
     return Stream.value(this);
   }

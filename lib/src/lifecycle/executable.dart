@@ -3,6 +3,6 @@
 ///
 /// Mostly used in commands.
 ///
-abstract class Executable<OUTPUT extends Object> {
+abstract class Executable<OUTPUT extends Object?> {
   OUTPUT execute();
 }

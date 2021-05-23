@@ -1,3 +1,3 @@
-abstract class Loadable {
-  void load();
+abstract class Loadable<T extends Object?> {
+  T load();
 }

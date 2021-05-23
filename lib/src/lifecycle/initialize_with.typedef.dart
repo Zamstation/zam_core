@@ -1,1 +1,2 @@
-typedef InitializeWith<A> = bool Function(A arg);
+typedef InitializeWith<INPUT extends Object?, OUTPUT extends Object?> = OUTPUT
+    Function(INPUT input);

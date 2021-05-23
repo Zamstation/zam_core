@@ -1,3 +1,3 @@
-abstract class Startable {
-  void start();
+abstract class Startable<T extends Object?> {
+  T start();
 }

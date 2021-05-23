@@ -16,6 +16,7 @@
 #-----------------------------------------------------------------------------
 
 # Parse arguments
+dir=`dirname "$0"`
 env='test'
 if [[ $1 == 'prod' ]]; then
 	env='prod'
@@ -24,17 +25,8 @@ fi
 # Abort if there is an error.
 set -e
 
-# Get dependencies
-dart pub get
-
-# Format code
-dart format --set-exit-if-changed .
-
-# Run dart analyze
-dart analyze --fatal-infos --fatal-warnings .
-
-# Run tests and collect coverage
-flutter test --no-pub --coverage
+# Validate package
+sh $dir/validate.sh
 
 # Publish
 if [[ $env == 'test' ]]; then

@@ -3,6 +3,6 @@
 ///
 /// Mostly used in services.
 ///
-abstract class Initializable {
-  void initialize();
+abstract class Initializable<T extends Object?> {
+  T initialize();
 }

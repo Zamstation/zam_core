@@ -1,3 +1,3 @@
-abstract class Undoable {
-  void undo();
+abstract class Undoable<T extends Object?> {
+  T undo();
 }

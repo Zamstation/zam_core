@@ -1,5 +1,6 @@
 import 'initialize.typedef.dart';
 
-abstract class NestedInitializable {
-  void initialize({Initialize innerInitialize});
+abstract class NestedInitializable<OUTPUT extends Object?,
+    INNER_OUTPUT extends Object?> {
+  OUTPUT initialize({Initialize<INNER_OUTPUT> innerInitialize});
 }

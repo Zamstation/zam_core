@@ -1,1 +1,1 @@
-typedef AsyncInitialize = Future<bool> Function();
+typedef AsyncInitialize<T extends Object?> = Future<T> Function();

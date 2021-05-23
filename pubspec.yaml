@@ -1,6 +1,7 @@
 name: zam_core
-version: 0.0.2
-description: Core library for all zamstation packages which contains the most basic classes like the NamedException to get started.
+version: 0.1.0
+description: Core library for all zamstation packages which contains the most
+  basic classes like the NamedException to get started.
 homepage: https://zamstation.com
 repository: https://github.com/zamstation/zam_core
 

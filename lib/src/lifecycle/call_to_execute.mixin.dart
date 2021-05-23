@@ -28,7 +28,7 @@ import 'executable.dart';
 ///
 ///     cmd();
 ///
-mixin CallToExecute<OUTPUT extends Object> on Executable<OUTPUT> {
+mixin CallToExecute<OUTPUT extends Object?> on Executable<OUTPUT> {
   ///
   /// Calls the [execute] function.
   ///

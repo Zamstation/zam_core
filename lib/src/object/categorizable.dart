@@ -1,3 +1,3 @@
-abstract class Categorizable<T> {
+abstract class Categorizable<T extends Object?> {
   T get category;
 }

@@ -1,3 +1,3 @@
-abstract class Stoppable {
-  void stop();
+abstract class Stoppable<T extends Object?> {
+  T stop();
 }

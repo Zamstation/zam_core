@@ -1,3 +1,3 @@
-abstract class Validatable {
-  void validate();
+abstract class Validatable<T extends Object?> {
+  T validate();
 }

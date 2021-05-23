@@ -1,3 +1,3 @@
-abstract class Runnable {
-  void run();
+abstract class Runnable<T extends Object?> {
+  T run();
 }

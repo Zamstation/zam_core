@@ -1,8 +1,9 @@
+import 'initializable.dart';
+
 ///
 /// An interface to force implement async [initialize] function.
 ///
 /// Mostly used in services.
 ///
-abstract class AsyncInitializable {
-  Future<void> initialize();
-}
+abstract class AsyncInitializable<T extends Object?>
+    implements Initializable<Future<T>> {}

@@ -1,13 +1,13 @@
-abstract class Activatable {
+abstract class Activatable<T extends Object?> {
   bool get isActive;
 
   ///
   /// Sets [isActive] flag.
   ///
-  void activate();
+  T activate();
 
   ///
   /// Unsets [isActive] flag.
   ///
-  void deactivate();
+  T deactivate();
 }

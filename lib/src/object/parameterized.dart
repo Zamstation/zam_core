@@ -1,3 +1,3 @@
-abstract class Parameterized<REQUEST> {
-  REQUEST get request;
+abstract class Parameterized<INPUT extends Object?> {
+  INPUT get input;
 }

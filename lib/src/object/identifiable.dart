@@ -3,6 +3,6 @@
 /// [key] is supposed to be unique.
 /// Can be used in [==] operator and [hashCode] overrides.
 ///
-abstract class Identifiable<T> {
+abstract class Identifiable<T extends Object?> {
   T get key;
 }

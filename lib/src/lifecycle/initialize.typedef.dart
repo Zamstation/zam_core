@@ -1,1 +1,1 @@
-typedef Initialize = bool Function();
+typedef Initialize<T extends Object?> = T Function();

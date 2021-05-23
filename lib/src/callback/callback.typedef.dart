@@ -1,1 +1,8 @@
-typedef Callback<T> = T Function();
+///
+/// Example:
+///
+///     final Callback<int> callback;
+///     ...
+///     final output = callback();
+///
+typedef Callback<OUTPUT extends Object> = OUTPUT Function();

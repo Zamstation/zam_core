@@ -3,6 +3,6 @@
 ///
 /// Mostly used in services.
 ///
-abstract class Disposable {
-  void dispose();
+abstract class Disposable<T extends Object?> {
+  T dispose();
 }
