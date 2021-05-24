@@ -1,3 +1,6 @@
+# 0.1.1
+  * Modified `Builder`, `ParameterizedBuilder`, `Callback`, `ParameterizedCallback`, `ParameterizedVoidCallback`and `VoidCallback` so that their generics now allow nulls. For example, `Builder<INSTANCE extends Object?>` instead of `Builder<INSTANCE extends Object>`.
+
 # 0.1.0
   * Removed `BasicException` in favor of `NamedException`.
   * Removed `EmptyException` in favor of `NamedException`.

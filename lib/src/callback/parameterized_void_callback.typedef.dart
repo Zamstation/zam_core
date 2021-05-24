@@ -5,5 +5,5 @@
 ///     ...
 ///     exceptionHandler(exception);
 ///
-typedef ParameterizedVoidCallback<INPUT extends Object> = void Function(
+typedef ParameterizedVoidCallback<INPUT extends Object?> = void Function(
     INPUT input);
