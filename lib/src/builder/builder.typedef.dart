@@ -5,4 +5,4 @@
 ///     ...
 ///     carBuilder();
 ///
-typedef Builder<INSTANCE extends Object> = INSTANCE Function();
+typedef Builder<INSTANCE extends Object?> = INSTANCE Function();

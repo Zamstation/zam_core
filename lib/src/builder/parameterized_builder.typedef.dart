@@ -5,5 +5,5 @@
 ///     ...
 ///     final car = carBuilder(HondaCivic);
 ///
-typedef ParameterizedBuilder<INPUT extends Object, INSTANCE extends Object>
+typedef ParameterizedBuilder<INPUT extends Object?, INSTANCE extends Object?>
     = INSTANCE Function(INPUT input);
