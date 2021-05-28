@@ -3,10 +3,21 @@ name: Dev Build
 on:
   push:
     branches:
-      - dev
+      - 'develop'
+      - 'bugfix/**'
+      - 'feature/**'
+      - 'release/**'
+      - 'hotfix/**'
+      - 'support/**'
+
   pull_request:
     branches:
-      - dev
+      - 'develop'
+      - 'bugfix/**'
+      - 'feature/**'
+      - 'release/**'
+      - 'hotfix/**'
+      - 'support/**'
 
 jobs:
   build:
