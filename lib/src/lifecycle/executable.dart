@@ -1,5 +1,5 @@
 ///
-/// An interface to force implement async [execute] function.
+/// An interface to force implement [execute] function.
 ///
 /// Mostly used in commands.
 ///
