@@ -1,3 +1,14 @@
+# 0.5.0
+- **BREAKING:** Removed `NamedException` constructor.
+- Updated `NamedException` with factory constructors.
+- Added `BasicException`.
+- Added `EmptyException`.
+- Update dart sdk to 2.13.0.
+- Added `Json` typedef for `Map<String, Object?>`.
+- Update `Serialize`, `Deserialize`, `Serializable` with `Json`.
+- Added `emptyCallback`.
+- Added `emptyParameterizedCallback
+
 # 0.4.0
 - Added `ViewModel`.
 
