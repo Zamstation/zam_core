@@ -1,3 +1,6 @@
+# 0.4.0
+- Added `ViewModel`.
+
 # 0.3.0
 - **BREAKING:** Removed `ObjectAsStreamExtension`.
 - **BREAKING:** Removed `redux` library.
