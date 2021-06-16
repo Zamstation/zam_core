@@ -1,4 +1,2 @@
 export 'core.dart';
-export 'equatable.dart';
-export 'meta.dart';
-export 'rxdart.dart';
+export 'external.dart';
