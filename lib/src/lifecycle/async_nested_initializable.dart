@@ -1,4 +1,4 @@
-import 'async_initialize.typedef.dart';
+import 'async_initialize.dart';
 
 abstract class AsyncNestedInitializable<OUTPUT extends Object?,
     INNER_OUTPUT extends Object?> {

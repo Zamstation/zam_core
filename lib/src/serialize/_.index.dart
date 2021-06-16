@@ -1,3 +1,4 @@
-export 'deserialize.typedef.dart';
+export 'deserialize.dart';
+export 'json.dart';
 export 'serializable.dart';
-export 'serialize.typedef.dart';
+export 'serialize.dart';

@@ -1,4 +1,4 @@
-import 'initialize.typedef.dart';
+import 'initialize.dart';
 
 typedef NestedInitialize<OUTPUT extends Object?, INNER_OUTPUT extends Object?>
     = OUTPUT Function({Initialize<INNER_OUTPUT> innerInitialize});

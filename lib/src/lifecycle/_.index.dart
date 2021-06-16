@@ -9,7 +9,7 @@ export 'call_to_execute.mixin.dart';
 export 'disposable.dart';
 export 'executable.dart';
 export 'initializable.dart';
-export 'initialize.typedef.dart';
+export 'initialize.dart';
 export 'loadable.dart';
 export 'nested_initializable.dart';
 export 'runnable.dart';

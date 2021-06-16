@@ -1,2 +1,2 @@
-export 'builder.typedef.dart';
-export 'parameterized_builder.typedef.dart';
+export 'builder.dart';
+export 'parameterized.builder.dart';

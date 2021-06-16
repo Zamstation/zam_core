@@ -1,4 +1,4 @@
-import 'async_initialize.typedef.dart';
+import 'async_initialize.dart';
 
 typedef AsyncNestedInitialize<OUTPUT extends Object?,
         INNER_OUTPUT extends Object?>

@@ -1,4 +1,4 @@
-export 'exception_builder.typedef.dart';
+export 'exception.builder.dart';
 export 'exception_severity.enum.dart';
 export 'named.exception.dart';
-export 'parameterized_exception_builder.typedef.dart';
+export 'parameterized_exception.builder.dart';

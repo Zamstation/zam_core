@@ -1,4 +1,4 @@
-import 'initialize.typedef.dart';
+import 'initialize.dart';
 
 abstract class NestedInitializable<OUTPUT extends Object?,
     INNER_OUTPUT extends Object?> {
