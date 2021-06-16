@@ -1,3 +1,8 @@
+# 0.2.0
+- Added `equatable` library.
+- Added `redux` library.
+- Modified `zam_core.dart` to export all external libraries.
+
 # 0.1.2
 - Internal Repairs and Documentation.
 
