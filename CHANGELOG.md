@@ -1,3 +1,9 @@
+# 0.3.0
+- **BREAKING:** Removed `ObjectAsStreamExtension`.
+- **BREAKING:** Removed `redux` library.
+- Added `SubscriptionManager`.
+- Added `rxdart` library.
+
 # 0.2.0
 - Added `equatable` library.
 - Added `redux` library.
