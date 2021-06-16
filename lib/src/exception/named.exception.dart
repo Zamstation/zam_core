@@ -1,4 +1,6 @@
 import '../object/identifiable.dart';
+import 'basic.exception.dart';
+import 'empty.exception.dart';
 import 'exception_severity.enum.dart';
 
 ///
@@ -17,7 +19,7 @@ import 'exception_severity.enum.dart';
 ///       severity: ExceptionSeverity.critical,
 ///     );
 ///
-class NamedException implements Exception, Identifiable<String> {
+abstract class NamedException implements Exception, Identifiable<String> {
   ///
   /// An identifer for the exception.
   /// Default to the class's [runtimeType].
@@ -42,7 +44,7 @@ class NamedException implements Exception, Identifiable<String> {
   ///
   ///     problem => 'Provided value is -26 which is negative.'
   ///
-  final String problem;
+  String get problem;
 
   ///
   /// Solution statement of the [Exception].
@@ -51,12 +53,12 @@ class NamedException implements Exception, Identifiable<String> {
   ///
   ///     solution => 'Please provide a positive value.'
   ///
-  final String solution;
+  String get solution;
 
   ///
   /// Severity can be none, warning or critical.
   ///
-  final ExceptionSeverity severity;
+  ExceptionSeverity get severity;
 
   ///
   /// Complete description of the [Exception].
@@ -67,22 +69,50 @@ class NamedException implements Exception, Identifiable<String> {
       '$name has occured.\n> Problem: $problem\n> Solution: $solution';
 
   ///
+  /// Empty default constructor for sub classes.
+  ///
+  const NamedException();
+
+  ///
   /// Example:
   ///
-  ///     final exception = NamedException('Provided value is -26 which is negative.');
+  ///     final exception = NamedException.create('Provided value is -26 which is negative.');
   /// or
   ///
-  ///     final exception = NamedException(
+  ///     final exception = NamedException.create(
   ///       'Provided value is -26 which is negative.'
   ///       solution: 'Please provide a positive value.'
   ///       severity: ExceptionSeverity.critical,
   ///     );
   ///
-  const NamedException(
-    this.problem, {
-    this.solution = '<none>',
-    this.severity = ExceptionSeverity.none,
-  });
+  factory NamedException.create(
+    String problem, {
+    String name = 'UnnamedException',
+    String solution = '<none>',
+    ExceptionSeverity severity = ExceptionSeverity.none,
+  }) =>
+      BasicException(
+        problem,
+        name: name,
+        solution: solution,
+        severity: severity,
+      );
 
-  String toString() => text;
+  ///
+  /// Example:
+  ///
+  ///     final exception = NamedException.empty();
+  ///
+  /// or
+  ///
+  ///     final exception = EmptyException();
+  ///
+  factory NamedException.empty() => EmptyException();
+
+  ///
+  /// [toString] function returns the exception's [text]
+  ///
+  String toString() {
+    return text;
+  }
 }
