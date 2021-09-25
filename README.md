@@ -11,12 +11,12 @@ Core library for all the packages built by [zamstation](https://pub.dev/publishe
 
 ## What's inside the package
 
-  * [Builder](https://pub.dev/documentation/zam_core/latest/zam_core/Builder.html)
-  * [Callback](https://pub.dev/documentation/zam_core/latest/zam_core/Callback.html)
-  * [Exception](https://pub.dev/documentation/zam_core/latest/zam_core/NamedException-class.html)
-  * [Lifecycle](https://pub.dev/documentation/zam_core/latest/zam_core/Disposable-class.html)
-  * [Object](https://pub.dev/documentation/zam_core/latest/zam_core/Identifiable-class.html)
-  * [Serialize](https://pub.dev/documentation/zam_core/latest/zam_core/Serializable-class.html)
+  * [Builder](https://pub.dev/documentation/zam_core/latest/builder/Builder.html)
+  * [Callback](https://pub.dev/documentation/zam_core/latest/callback/Callback.html)
+  * [Exception](https://pub.dev/documentation/zam_core/latest/exception/NamedException-class.html)
+  * [Lifecycle](https://pub.dev/documentation/zam_core/latest/lifecycle/Disposable-class.html)
+  * [Identifiable](https://pub.dev/documentation/zam_core/latest/object/Identifiable-class.html)
+  * [Serialize](https://pub.dev/documentation/zam_core/latest/serialize/Serializable-class.html)
   * [ViewModel](https://pub.dev/documentation/zam_core/latest/presentation/ViewModel-class.html)
 
 Check out all the components in detail [here](https://pub.dev/documentation/zam_core/latest/zam_core/zam_core-library.html)
