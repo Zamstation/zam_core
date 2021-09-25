@@ -17,6 +17,7 @@ Core library for all the packages built by [zamstation](https://pub.dev/publishe
   * [Lifecycle](https://pub.dev/documentation/zam_core/latest/zam_core/Disposable-class.html)
   * [Object](https://pub.dev/documentation/zam_core/latest/zam_core/Identifiable-class.html)
   * [Serialize](https://pub.dev/documentation/zam_core/latest/zam_core/Serializable-class.html)
+  * [ViewModel](https://pub.dev/documentation/zam_core/latest/presentation/ViewModel-class.html)
 
 Check out all the components in detail [here](https://pub.dev/documentation/zam_core/latest/zam_core/zam_core-library.html)
 
@@ -62,6 +63,7 @@ final exception = NamedException.create(
 ### Cloneable
 
 ```dart
+@immutable
 class Triangle implements Cloneable<Triangle> {
   final double base;
   final double height;
@@ -72,6 +74,19 @@ class Triangle implements Cloneable<Triangle> {
   Triangle clone() {
     return Triangle(this.base, this.height);
   }
+}
+```
+
+### ViewModel
+```dart
+@immutable
+class HeightViewModel extends ViewModel {
+  final double value;
+
+  @override
+  get props => [value];
+
+  const HeightViewModel(this.value);
 }
 ```
 

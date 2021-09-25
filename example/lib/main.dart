@@ -36,6 +36,7 @@ void main() {
   // > Solution: Provide a positive value.
 }
 
+@immutable
 class Triangle implements Cloneable<Triangle> {
   final double base;
   final double height;
@@ -46,4 +47,14 @@ class Triangle implements Cloneable<Triangle> {
   Triangle clone() {
     return Triangle(this.base, this.height);
   }
+}
+
+@immutable
+class HeightViewModel extends ViewModel {
+  final double value;
+
+  @override
+  get props => [value];
+
+  const HeightViewModel(this.value);
 }
