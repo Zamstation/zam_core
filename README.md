@@ -47,12 +47,12 @@ Provides more classified details of the exception like `severity` and `solution`
 Construct it with a simple problem statement.
 
 ```dart
-final exception = NamedException('Provided value is -26 which is negative.');
+final exception = NamedException.create('Provided value is -26 which is negative.');
 ```
 or build it with more details.
 
 ```dart
-final exception = NamedException(
+final exception = NamedException.create(
   'Provided value is -26 which is negative.'
   solution: 'Please provide a positive value.'
   severity: ExceptionSeverity.critical,

@@ -10,10 +10,11 @@ import 'exception_severity.enum.dart';
 ///
 /// Example:
 ///
-///     final exception = NamedException('Provided value is -26 which is negative.');
+///     final exception = NamedException.create('Provided value is -26 which is negative.');
+///
 /// or
 ///
-///     final exception = NamedException(
+///     final exception = NamedException.create(
 ///       'Provided value is -26 which is negative.'
 ///       solution: 'Please provide a positive value.'
 ///       severity: ExceptionSeverity.critical,
@@ -77,6 +78,7 @@ abstract class NamedException implements Exception, Identifiable<String> {
   /// Example:
   ///
   ///     final exception = NamedException.create('Provided value is -26 which is negative.');
+  ///
   /// or
   ///
   ///     final exception = NamedException.create(
