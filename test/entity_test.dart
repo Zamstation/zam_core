@@ -10,7 +10,6 @@ void main() {
 void entityTest() {
   group('Entity:', () {
     final person = BmiEntity(weight: 81.0, height: 1.8);
-    print(person.toString());
 
     test('toString should output value from EquatableMixin', () {
       expect(person.toString(), 'BmiEntity(81.0, 1.8)');

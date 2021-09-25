@@ -8,7 +8,6 @@ void main() {
 void modelTest() {
   group('Model:', () {
     final bmi = BmiModel(81.0, 1.8);
-    print(bmi.toString());
 
     test('toString should output value from EquatableMixin', () {
       expect(bmi.toString(), 'BmiModel(81.0, 1.8, 25.0)');
