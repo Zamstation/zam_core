@@ -50,6 +50,18 @@ class Triangle implements Cloneable<Triangle> {
 }
 
 @immutable
+class BmiModel extends Model {
+  final double weight;
+  final double height;
+  final double value;
+
+  @override
+  get props => [weight, height];
+
+  const BmiModel(this.weight, this.height) : value = weight / (height * height);
+}
+
+@immutable
 class HeightViewModel extends ViewModel {
   final double value;
 

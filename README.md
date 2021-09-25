@@ -17,6 +17,7 @@ Core library for all the packages built by [zamstation](https://pub.dev/publishe
   * [Lifecycle](https://pub.dev/documentation/zam_core/latest/lifecycle/Disposable-class.html)
   * [Identifiable](https://pub.dev/documentation/zam_core/latest/object/Identifiable-class.html)
   * [Serialize](https://pub.dev/documentation/zam_core/latest/serialize/Serializable-class.html)
+  * [Model](https://pub.dev/documentation/zam_core/latest/domain/Model-class.html)
   * [ViewModel](https://pub.dev/documentation/zam_core/latest/presentation/ViewModel-class.html)
 
 Check out all the components in detail [here](https://pub.dev/documentation/zam_core/latest/zam_core/zam_core-library.html)

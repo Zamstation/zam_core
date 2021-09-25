@@ -1,5 +1,6 @@
 export 'builder.dart';
 export 'callback.dart';
+export 'domain.dart';
 export 'exception.dart';
 export 'lifecycle.dart';
 export 'object.dart';
