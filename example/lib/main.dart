@@ -70,3 +70,44 @@ class HeightViewModel extends ViewModel {
 
   const HeightViewModel(this.value);
 }
+
+@immutable
+class BmiEntity extends Entity<BmiModel> {
+  final String key = '';
+  final double weight;
+  final double height;
+
+  @override
+  get props => [weight, height];
+
+  const BmiEntity({
+    required this.weight,
+    required this.height,
+  });
+
+  BmiEntity.fromJson(Json json)
+      : this(
+          weight: json['weight'] as double,
+          height: json['height'] as double,
+        );
+
+  BmiEntity.fromModel(BmiModel model)
+      : this(
+          weight: model.weight,
+          height: model.height,
+        );
+
+  @override
+  Json toJson() {
+    return {
+      'key': this.key,
+      'weight': this.weight,
+      'height': this.height,
+    };
+  }
+
+  @override
+  BmiModel toModel() {
+    return BmiModel(this.weight, this.height);
+  }
+}
