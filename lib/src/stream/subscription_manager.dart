@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:rxdart/rxdart.dart';
 
 class SubscriptionManager extends CompositeSubscription {
-  final _subscriptionMap = Map<String, StreamSubscription>();
+  final _subscriptionMap = <String, StreamSubscription>{};
 
   SubscriptionManager();
 

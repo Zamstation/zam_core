@@ -19,7 +19,7 @@ class UnknownException extends NamedException {
   ExceptionSeverity get severity => ExceptionSeverity.fatal;
 
   @override
-  String get text => '${super.text}\n\nStackTrace:\n${stackTrace}';
+  String get text => '${super.text}\n\nStackTrace:\n$stackTrace';
 
   final StackTrace stackTrace;
 

@@ -19,6 +19,7 @@ void entityTest() {
 
 @immutable
 class BmiEntity extends Entity<BmiModel> {
+  @override
   final String key = '';
   final double weight;
   final double height;
@@ -46,14 +47,14 @@ class BmiEntity extends Entity<BmiModel> {
   @override
   Json toJson() {
     return {
-      'key': this.key,
-      'weight': this.weight,
-      'height': this.height,
+      'key': key,
+      'weight': weight,
+      'height': height,
     };
   }
 
   @override
   BmiModel toModel() {
-    return BmiModel(this.weight, this.height);
+    return BmiModel(weight, height);
   }
 }

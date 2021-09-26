@@ -25,7 +25,8 @@ abstract class NamedException implements Exception, Identifiable<String> {
   /// An identifer for the exception.
   /// Default to the class's [runtimeType].
   ///
-  String get key => this.runtimeType.toString();
+  @override
+  String get key => runtimeType.toString();
 
   ///
   /// A more user readable exception name than the [key].
@@ -36,7 +37,7 @@ abstract class NamedException implements Exception, Identifiable<String> {
   ///
   /// [category] is either the super class or this class.
   ///
-  Type get category => this.runtimeType;
+  Type get category => runtimeType;
 
   ///
   /// Problem statement of the [Exception].
@@ -114,6 +115,7 @@ abstract class NamedException implements Exception, Identifiable<String> {
   ///
   /// [toString] function returns the exception's [text]
   ///
+  @override
   String toString() {
     return text;
   }

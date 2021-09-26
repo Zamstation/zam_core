@@ -5,12 +5,16 @@ import 'named.exception.dart';
 /// Exception that can be created on the fly.
 ///
 class BasicException extends NamedException {
+  @override
   final String key;
 
+  @override
   final String problem;
 
+  @override
   final String solution;
 
+  @override
   final ExceptionSeverity severity;
 
   ///

@@ -1,25 +1,18 @@
 # Zam Core Library
 
-Core library for all the packages built by [zamstation](https://pub.dev/publishers/zamstation.com).  
-  
-
-[![Version](https://img.shields.io/pub/v/zam_core?color=%234287f5)](https://pub.dev/packages/zam_core)
-[![Build](https://github.com/zamstation/zam_core/actions/workflows/build.yaml/badge.svg)](https://github.com/zamstation/zam_core/actions/workflows/build.yaml)
-[![Stars](https://img.shields.io/github/stars/zamstation/zam_core.svg?style=flat&logo=github&colorB=deeppink&label=stars)](https://github.com/zamstation/zam_core/stargazers)
-[![License](https://img.shields.io/github/license/zamstation/zam_core)](https://github.com/zamstation/zam_core/blob/master/LICENSE)
-
+Core library for all the packages built by [zamstation](https://pub.dev/publishers/zamstation.com).
 
 ## What's inside the package
 
-  * [Builder](https://pub.dev/documentation/zam_core/latest/builder/Builder.html)
-  * [Callback](https://pub.dev/documentation/zam_core/latest/callback/Callback.html)
-  * [Exception](https://pub.dev/documentation/zam_core/latest/exception/NamedException-class.html)
-  * [Lifecycle](https://pub.dev/documentation/zam_core/latest/lifecycle/Disposable-class.html)
-  * [Identifiable](https://pub.dev/documentation/zam_core/latest/object/Identifiable-class.html)
-  * [Serialize](https://pub.dev/documentation/zam_core/latest/serialize/Serializable-class.html)
-  * [Model](https://pub.dev/documentation/zam_core/latest/domain/Model-class.html)
-  * [ViewModel](https://pub.dev/documentation/zam_core/latest/presentation/ViewModel-class.html)
-  * [Entity](https://pub.dev/documentation/zam_core/latest/repository/Entity-class.html)
+- [Builder](https://pub.dev/documentation/zam_core/latest/builder/Builder.html)
+- [Callback](https://pub.dev/documentation/zam_core/latest/callback/Callback.html)
+- [Exception](https://pub.dev/documentation/zam_core/latest/exception/NamedException-class.html)
+- [Lifecycle](https://pub.dev/documentation/zam_core/latest/lifecycle/Disposable-class.html)
+- [Identifiable](https://pub.dev/documentation/zam_core/latest/object/Identifiable-class.html)
+- [Serialize](https://pub.dev/documentation/zam_core/latest/serialize/Serializable-class.html)
+- [Model](https://pub.dev/documentation/zam_core/latest/domain/Model-class.html)
+- [ViewModel](https://pub.dev/documentation/zam_core/latest/presentation/ViewModel-class.html)
+- [Entity](https://pub.dev/documentation/zam_core/latest/repository/Entity-class.html)
 
 Check out all the components in detail [here](https://pub.dev/documentation/zam_core/latest/zam_core/zam_core-library.html)
 
@@ -151,5 +144,13 @@ class BmiEntity extends Entity<BmiModel> {
 }
 ```
 
+To learn more, move on to the [example section](https://pub.dev/packages/zam_core/example) or check out these dedicated [examples in github](https://github.com/zamstation/zam_core/blob/main/example/lib).
+
+## Status
+[![Build](https://github.com/zamstation/zam_core/actions/workflows/build.yaml/badge.svg)](https://github.com/zamstation/zam_core/actions/workflows/build.yaml)
+
 ## Contributors
-  * [Amsakanna](https://github.com/amsakanna)
+- [Amsakanna](https://github.com/amsakanna)
+
+## License
+[BSD 3-Clause License](https://github.com/zamstation/zam_core/blob/main/LICENSE)
