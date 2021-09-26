@@ -147,7 +147,7 @@ class BmiEntity extends Entity<BmiModel> {
 To learn more, move on to the [example section](https://pub.dev/packages/zam_core/example) or check out these dedicated [examples in github](https://github.com/zamstation/zam_core/blob/main/example/lib).
 
 ## Status
-[![Build](https://github.com/zamstation/zam_core/actions/workflows/build.yaml/badge.svg)](https://github.com/zamstation/zam_core/actions/workflows/build.yaml)
+[![Build](https://github.com/zamstation/zam_core/actions/workflows/deploy_workflow.yaml/badge.svg)](https://github.com/zamstation/zam_core/actions/workflows/deploy_workflow.yaml)
 
 ## Contributors
 - [Amsakanna](https://github.com/amsakanna)
