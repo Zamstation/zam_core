@@ -1,3 +1,12 @@
+# 0.6.0
+- Added `Model`.
+- Added `Entity`.
+- Added `UnknownException`.
+- Added `Service`.
+- Updated `ViewModel` with const constructor.
+- Updated `ExceptionServerity` enum with a new value `fatal`.
+- Dependency Updates: `meta 1.7.0`.
+
 # 0.5.0
 - **BREAKING:** Removed `NamedException` constructor.
 - Updated `NamedException` with factory constructors.
