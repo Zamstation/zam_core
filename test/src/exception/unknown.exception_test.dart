@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:zam_core/zam_core.dart';
+import 'package:zam_core/zam_core.dart' show UnknownException;
 
 void main() {
   unknownExceptionTest();

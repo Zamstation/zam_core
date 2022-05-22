@@ -1,7 +1,10 @@
+import 'package:meta/meta.dart' show protected;
+
 import '../object/identifiable.dart';
 import 'basic.exception.dart';
 import 'empty.exception.dart';
 import 'exception_severity.enum.dart';
+import 'unknown.exception.dart';
 
 ///
 /// Wrapper around the built-in [Exception] class.
@@ -73,6 +76,7 @@ abstract class NamedException implements Exception, Identifiable<String> {
   ///
   /// Empty default constructor for sub classes.
   ///
+  @protected
   const NamedException();
 
   ///
@@ -102,6 +106,14 @@ abstract class NamedException implements Exception, Identifiable<String> {
       );
 
   ///
+  /// Converts an unhandled [Exception] into an [UnknownException].
+  ///
+  factory NamedException.fromRaw(Exception exception, StackTrace stackTrace) =>
+      exception = exception is NamedException
+          ? exception
+          : UnknownException(stackTrace: stackTrace);
+
+  ///
   /// Example:
   ///
   ///     final exception = NamedException.empty();
@@ -113,7 +125,7 @@ abstract class NamedException implements Exception, Identifiable<String> {
   factory NamedException.empty() => EmptyException();
 
   ///
-  /// [toString] function returns the exception's [text]
+  /// [toString] function returns the exception's [text].
   ///
   @override
   String toString() {
