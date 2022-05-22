@@ -1,13 +1,9 @@
 import 'package:test/test.dart';
-import 'package:zam_core/zam_core.dart';
+import 'package:zam_core/zam_core.dart' show Entity, Json, immutable;
 
-import 'model_test.dart' show BmiModel;
+import '../domain/model_test.dart' show BmiModel;
 
 void main() {
-  entityTest();
-}
-
-void entityTest() {
   group('Entity:', () {
     final person = BmiEntity(weight: 81.0, height: 1.8);
 

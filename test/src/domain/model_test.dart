@@ -1,11 +1,7 @@
 import 'package:test/test.dart';
-import 'package:zam_core/zam_core.dart';
+import 'package:zam_core/zam_core.dart' show Model, immutable;
 
 void main() {
-  modelTest();
-}
-
-void modelTest() {
   group('Model:', () {
     final bmi = BmiModel(81.0, 1.8);
 

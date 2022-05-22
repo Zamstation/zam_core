@@ -7,7 +7,7 @@ void main() {
     final exception =
         NamedException.create('Provided value is -26 which is negative.');
 
-    test('Defaults are set successfully.', () {
+    test('Defaults are set successfully', () {
       expect(exception.key, 'UnnamedException');
       expect(exception.name, 'UnnamedException');
       expect(exception.category, BasicException);

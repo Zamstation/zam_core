@@ -10,7 +10,7 @@ void main() {
       name: 'Invalid Height Exception',
     );
 
-    test('Provided values are set successfully.', () {
+    test('Provided values are set successfully', () {
       expect(exception.problem, 'Provided value is -26 which is negative.');
       expect(exception.solution, 'Please provide a positive value.');
       expect(exception.severity, ExceptionSeverity.warning);
@@ -27,7 +27,7 @@ void main() {
       StackTrace.empty,
     );
 
-    test('fromRaw values are set successfully.', () {
+    test('fromRaw values are set successfully', () {
       expect(exception.problem, 'Provided value is -26 which is negative.');
       expect(exception.solution, '<none>');
       expect(exception.severity, ExceptionSeverity.none);

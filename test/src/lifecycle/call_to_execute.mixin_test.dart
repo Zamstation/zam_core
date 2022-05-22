@@ -1,16 +1,12 @@
 import 'package:test/test.dart';
-import 'package:zam_core/zam_core.dart';
+import 'package:zam_core/zam_core.dart' show CallToExecute, Executable;
 
 void main() {
-  testCallToExecute();
-}
-
-void testCallToExecute() {
   group('CallToExecute:', () {
     final cmd = DeployCommand();
     final output = 'execute called';
 
-    test('Call should execute should do the same thing.', () {
+    test('Call should execute should do the same thing', () {
       expect(cmd.execute(), output);
       expect(cmd(), output);
     });
