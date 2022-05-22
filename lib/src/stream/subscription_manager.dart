@@ -1,6 +1,6 @@
-import 'dart:async';
+import 'dart:async' show StreamSubscription;
 
-import 'package:rxdart/rxdart.dart';
+import 'package:rxdart/rxdart.dart' show CompositeSubscription;
 
 class SubscriptionManager extends CompositeSubscription {
   final _subscriptionMap = <String, StreamSubscription>{};
@@ -33,14 +33,17 @@ class SubscriptionManager extends CompositeSubscription {
   }
 
   @override
-  void remove(StreamSubscription<dynamic> subscription) {
-    super.remove(subscription);
+  remove(
+    StreamSubscription<dynamic> subscription, {
+    bool shouldCancel = true,
+  }) async {
+    await super.remove(subscription, shouldCancel: shouldCancel);
     _subscriptionMap.removeWhere((id, item) => item == subscription);
   }
 
   @override
-  void clear() {
-    super.clear();
+  clear() async {
+    await super.clear();
     _subscriptionMap.clear();
   }
 }
