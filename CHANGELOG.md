@@ -1,3 +1,15 @@
+# 0.7.0
+- Feature: Default value for `stringify` in `ViewModel`.
+- Feature: `NamedException.fromRaw` feature.
+- Bugfix: SubscriptionManager function return types now inherit their parent.
+- Dependency Updates:
+	- `flutter 3.0.0` 
+	- `dart 2.17.0` 
+	- `meta 1.8.0` 
+	- `rxdart 0.27.3` 
+	- `lints 2.0.0` 
+	- `test 1.21.1`
+
 # 0.6.0
 - Added `Model`.
 - Added `Entity`.
